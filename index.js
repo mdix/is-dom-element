@@ -9,7 +9,7 @@
 
 module.exports = function (selector) {
 	var targetNode = selector;
-	if (typeof selector === 'string' || selector instanceOf String) {
+	if (typeof selector === 'string' || selector instanceof String) {
 		targetNode = document.querySelector(selector);
 	}
 	return Node.ELEMENT_NODE === targetNode.nodeType;
